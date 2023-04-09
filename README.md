@@ -1,2 +1,2 @@
 # Portfolio
-A repo to host my Portfolio
+A repo to host my Portfolio.
