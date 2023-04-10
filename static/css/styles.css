@@ -1,5 +1,5 @@
 .background {
-    background: linear-gradient(270deg, #b9b3ff, #bd91ff, #ac68fb, #b336fc);
+    background: linear-gradient(270deg, #b9b3ff, #a468ff, #ac68fb, #fb6868);
     background-size: 400% 400%;
 
     -webkit-animation: background 60s ease infinite;
@@ -49,6 +49,8 @@
 
 .navbar-brand {
     font-family: 'Poppins', sans-serif;
+    color: rgb(0, 0, 0);
+    text-shadow: 0.5px 0.5px 0px rgba(255, 73, 73, 1), 1px 1px 0px rgba(255, 135, 135, 1);
 }
 
 .brand-logo{}
