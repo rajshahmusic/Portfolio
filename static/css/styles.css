@@ -1,10 +1,10 @@
 .background {
-    background: linear-gradient(270deg, #b9b3ff, #a468ff, #ac68fb, #fb6868);
+    background: linear-gradient(270deg, rgb(255, 139, 139), rgb(113, 158, 255), rgb(192, 129, 255));
     background-size: 400% 400%;
 
-    -webkit-animation: background 60s ease infinite;
-    -moz-animation: background 60s ease infinite;
-    animation: background 60s ease infinite;
+    -webkit-animation: background 45s ease infinite;
+    -moz-animation: background 45s ease infinite;
+    animation: background 45s ease infinite;
 }
 @-webkit-keyframes background {
     0%{background-position:0% 50%}
@@ -26,7 +26,7 @@
     background-color: rgba(255, 255, 255, 0.41);
     backdrop-filter: blur(15px);
     border: 1px solid rgba(0, 0, 0, 0.25);
-    background-color: rgba(0, 0, 0, 0.45);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 .big-shadow {
     box-shadow: 0px 12px 50px rgba(0, 0, 0, 0.75);
