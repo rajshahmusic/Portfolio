@@ -1,5 +1,5 @@
 .background {
-    background: linear-gradient(270deg, rgb(255, 139, 139), rgb(113, 158, 255), rgb(192, 129, 255));
+    background: linear-gradient(270deg, rgb(255, 0, 0), rgb(0, 81, 255), rgb(50, 0, 87));
     background-size: 400% 400%;
 
     -webkit-animation: background 45s ease infinite;
@@ -23,30 +23,15 @@
 }
 
 .glass {
-    background-color: rgba(255, 255, 255, 0.41);
-    backdrop-filter: blur(15px);
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
     border: 1px solid rgba(0, 0, 0, 0.25);
-    background-color: rgba(255, 255, 255, 0.5);
 }
 .big-shadow {
     box-shadow: 0px 12px 50px rgba(0, 0, 0, 0.75);
 }
-
-.container-root {
-	padding: 10px;
-}
-.container {
-	
-	position: relative;
-    top: 20px;
-	padding: 20px;
-}
-
-.navbar {
-	position: fixed;
-	top: 10px;
-	left: 10px;
-	right: 10px;
+.photo-shadow {
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.75);
 }
 
 .navbar-brand {
@@ -54,9 +39,9 @@
     color: rgb(255, 255, 255);
     text-shadow: 0.5px 0.5px 0px rgb(123, 0, 255), 1px 1px 0px rgb(78, 122, 255);
 }
-
-.brand-logo{}
-
+.nav-link {
+    color: white;
+}
 .navbar-toggler{
     border: none;
     color: rgba(0, 0, 0, 0);
@@ -68,12 +53,8 @@
 }
 
 .footer {
-	position: sticky;
-	bottom: 0px;
-	left: 10px;
-	right: 10px;
     color: rgb(255, 255, 255);
     text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.25);
-    border: 100px solid #ffff;
+    border: 100px solid #000000;
     border-width: 0px;
 }
