@@ -1,5 +1,5 @@
 .background {
-    background: linear-gradient(270deg, rgb(252, 118, 0), rgb(204, 0, 255), rgb(21, 0, 255));
+    background: linear-gradient(270deg, rgb(255, 64, 64), rgb(204, 0, 255), rgb(60, 174, 255));
     background-size: 400% 400%;
 
     -webkit-animation: background 45s ease infinite;
@@ -23,7 +23,7 @@
 }
 
 .glass {
-    background-color: rgba(0, 0, 0, 0.45);
+    background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
