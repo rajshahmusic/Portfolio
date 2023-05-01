@@ -1,10 +1,14 @@
-const api_url ="https://zenquotes.io/api/quotes/keyword=inspiration";
+import data from './quotes.json' assert { type: 'json' };
 
-async function getapi(url)
-{
-  const response = await fetch(url, {mode: "no-cors"});
-  var data = await response.json();
-  console.log(data);
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
 }
+var i = getRandomInt(358);
 
-getapi(api_url);
+var quote = data.quotes[i].quote;
+var author = data.quotes[i].author;
+
+
+document.getElementById("quote").innerHTML = '"' + quote + '"';
+document.getElementById("author").innerHTML = '-' + author;

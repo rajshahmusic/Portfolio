@@ -20,9 +20,11 @@
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@600&family=Homemade+Apple&family=Montserrat:wght@600&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+Sans:ital,wght@1,300&family=Poppins:wght@700&display=swap"
+      rel="stylesheet">
 
-<!--CUSTOM STYLES-->
+    <!--CUSTOM STYLES-->
     <link href="./static/css/styles.css" rel="stylesheet">
   </head>
 
@@ -108,40 +110,45 @@
         </div>
       </nav>
 
-      <div class="container-fluid p-4 min-vh-100 glass-bg">
+      <!--background glass-->
+      <div class="container-fluid min-vh-100 glass-bg">
         <br><br><br>
+        
+        <p class="container-fluid m-4">
+          <hr class="text-white m-2">
+            <center class="quote-text" id="quote">Quote here</center>
+            <center class="quote-author" id="author">-author</center>
+          <hr class="text-white m-2">
+        </p>
 
-        <!--body row 1-->
-        <div class="row justify-content-md-center">
-          
-          <!--body col 1-->
-          <div class="col-md-auto justify-content-md-center">
-            <img src="./static/img/dp1.jpeg" height="300" class="rounded-circle m-4 photo-shadow">
-          </div>
+        <div class="contianer p-3 min-vh-100">
+          <!--body row 1-->
+          <div class="row justify-content-md-center align-items-center">
+            
+            <!--body col 1-->
+            <div class="col-md-auto justify-content-md-center">
+              <img src="./static/img/dp1.jpeg" height="300" class="rounded-circle m-4 photo-shadow">
+            </div>
 
-          <!--body col 2-->
-          <div class="col p-3 mb-4 rounded-4 glass-bg big-shadow">
-            <p class="text-white">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-              aliqua. Dignissim suspendisse in est ante in nibh mauris cursus mattis. Proin sagittis nisl rhoncus mattis rhoncus urna.
-              Consectetur adipiscing elit duis tristique sollicitudin nibh. Magna ac placerat vestibulum lectus mauris ultrices. Odio
-              ut sem nulla pharetra diam. Volutpat est velit egestas dui. Ultrices gravida dictum fusce ut. At tempor commodo
-              ullamcorper a lacus vestibulum sed arcu. Id diam vel quam elementum. Purus in massa tempor nec. Lorem ipsum dolor sit
-              amet consectetur. Habitasse platea dictumst vestibulum rhoncus est. Lorem ipsum dolor sit amet. A condimentum vitae
-              sapien pellentesque habitant morbi tristique. Fermentum iaculis eu non diam phasellus vestibulum lorem sed risus. Libero
-              nunc consequat interdum varius sit amet mattis vulputate enim. Velit ut tortor pretium viverra suspendisse potenti
-              nullam ac. Auctor neque vitae tempus quam pellentesque nec nam aliquam. Dictum fusce ut placerat orci nulla pellentesque
-              dignissim enim sit.
-            </p>
+            <!--body col 2-->
+            <div class="col p-3 mb-4 rounded-4 glass-bg big-shadow">
+              <p class="text-white">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Dignissim suspendisse in est ante in nibh mauris cursus mattis. Proin sagittis nisl rhoncus mattis rhoncus urna.
+                Consectetur adipiscing elit duis tristique sollicitudin nibh. Magna ac placerat vestibulum lectus mauris ultrices. Odio
+                ut sem nulla pharetra diam. Volutpat est velit egestas dui. Ultrices gravida dictum fusce ut. At tempor commodo
+                ullamcorper a lacus vestibulum sed arcu. Id diam vel quam elementum. Purus in massa tempor nec. Lorem ipsum dolor sit
+                amet consectetur. Habitasse platea dictumst vestibulum rhoncus est. Lorem ipsum dolor sit amet. A condimentum vitae
+                sapien pellentesque habitant morbi tristique. Fermentum iaculis eu non diam phasellus vestibulum lorem sed risus. Libero
+                nunc consequat interdum varius sit amet mattis vulputate enim. Velit ut tortor pretium viverra suspendisse potenti
+                nullam ac. Auctor neque vitae tempus quam pellentesque nec nam aliquam. Dictum fusce ut placerat orci nulla pellentesque
+                dignissim enim sit.
+              </p>
+            </div>
           </div>
         </div>
+        
             
-
-        <p class="text-white">
-          Inspirational quotes provided by
-          <a href="https://zenquotes.io/" target="_blank" class="text-white" style="text-decoration: none;">
-          <b>ZenQuotes API</b></a>
-        </p>
         
 
         <br><br><br><br>
@@ -158,6 +165,5 @@
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
 
-    <script src="./static/js/quotes.js"></script>
-
+    <script src="./static/js/quotes.js" type="module"></script>
   </body>
