@@ -3,5 +3,34 @@
 integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
 crossorigin="anonymous"></script>
 
-<script src="{{ '/assets/js/quotes.js' | relative_url }}" type="module"></script>
+<script src="{{ '/assets/js/quotes.js' | relative_url }}" type="module"></script> -->
 <script src="{{ '/assets/js/text-injector.js' | relative_url }}" type="module"></script>
+
+<!-- <script> -->
+<!-- 
+import data from "./data/quotes.json" assert { type: 'json' };
+
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+var i = getRandomInt(358);
+
+var quote = data.quotes[i].quote;
+var author = data.quotes[i].author;
+
+
+document.getElementById("quote").innerHTML = '"' + quote + '"';
+document.getElementById("author").innerHTML = '-' + author;
+
+// for intro text
+
+import data from "./data/text.json" assert { type: 'json' };
+
+var intro_title = data.intro.title
+var intro_text = data.intro.text
+
+document.getElementById('intro_title').innerHTML = intro_title
+document.getElementById('intro_text').innerHTML = intro_text
+
+</script> -->
