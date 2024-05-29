@@ -1,4 +1,4 @@
-import data from '/assets/js/quotes.json' assert { type: 'json' };
+import data from "{{ '/assets/data/quotes.json' | relative_url }}" assert { type: 'json' };
 
 
 function getRandomInt(max) {

@@ -1,4 +1,4 @@
-import data from '/assets/data/text.json' assert { type: 'json' };
+import data from "{{ '/assets/data/text.json' | relative_url }}" assert { type: 'json' };
 
 var intro_title = data.intro.title
 var intro_text = data.intro.text
