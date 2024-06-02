@@ -1,77 +1,12 @@
+
 .background {
-    background: linear-gradient(270deg, rgb(173, 100, 255), rgb(64, 131, 255), rgb(119, 0, 255));
-    background-size: 400% 400%;
-
-    -webkit-animation: background 45s ease infinite;
-    -moz-animation: background 45s ease infinite;
-    animation: background 45s ease infinite;
-}
-@-webkit-keyframes background {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes background {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes background {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-
-@keyframes wave-animation {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    10% {
-        transform: rotate(14deg);
-    }
-
-    /* The following five values can be played with to make the waving more or less extreme */
-    20% {
-        transform: rotate(-8deg);
-    }
-
-    30% {
-        transform: rotate(14deg);
-    }
-
-    40% {
-        transform: rotate(-4deg);
-    }
-
-    50% {
-        transform: rotate(10deg);
-    }
-
-    60% {
-        transform: rotate(0deg);
-    }
-
-    /* Reset for the last half to pause */
-    100% {
-        transform: rotate(0deg);
-    }
-}
-
-.background2 {
-    background-image: url("/Portfolio_Test/assets/img/bg3.png");
+    background-image: url("/Portfolio_Test/assets/img/bg1.png");
     background-size: cover;
-    background-position: 0% 30%;
-    background-position-y: 30%;
+    background-position: 0% 40%;
+    background-position-y: 40%;
 }
 
 
-
-.glass {
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(50px);
-    /*border: 1px solid rgba(255, 255, 255, 0.2);*/
-}
 .glass {
     background: linear-gradient(270deg, rgba(122, 122, 122, 0.5), rgba(0, 0, 0, 0.5));
     background-size: 400% 400%;
@@ -185,12 +120,12 @@
 
 .quote-text{
     font-family: 'Alegreya', serif;
-    font-size: 25px;
+    font-size: 16px;
     color: white;
 }
 .quote-author{
     font-family: 'Alegreya Sans', sans-serif;
-    font-size: 15px;
+    font-size: 10px;
     color: white;
 }
 
@@ -201,4 +136,5 @@
     border: 100px solid #000000;
     border-width: 0px;
     position: relative;
+    bottom: 0;
 }
