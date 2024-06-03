@@ -2,7 +2,8 @@
     <div class="carousel-inner">
         <div class="carousel-item active">
             <div class="video-container">
-                <iframe data-src="https://www.youtube.com/embed/7o1qYVCTDs4" title="YouTube video player" frameborder="0"
+                <iframe data-src="https://www.youtube.com/embed/7o1qYVCTDs4" title="YouTube video player"
+                    frameborder="0"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen class="d-block w-100"
                     style="border-radius: 20px; position: absolute;top: 0;left: 0;width: 80%;height: 80%;border: 0;"></iframe>
@@ -18,7 +19,8 @@
             <div class="card"
                 style="height: 60vh; width: 70vw; margin: auto; border-radius: 20px; background-color: #000;">
                 <div class="card-body">
-                    <iframe data-src="https://www.youtube.com/embed/6EB155FztnA" title="YouTube video player" frameborder="0"
+                    <iframe data-src="https://www.youtube.com/embed/6EB155FztnA" title="YouTube video player"
+                        frameborder="0"
                         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen class="d-block w-100" style="height: 60vh; border-radius: 20px;"></iframe>
                 </div>
@@ -46,27 +48,27 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var carousel = document.getElementById('videoCarousel');
-    
-    // Function to load the video
-    function loadVideo(item) {
-      var iframe = item.querySelector('iframe');
-      var src = iframe.getAttribute('data-src');
-      if (src) {
-        iframe.setAttribute('src', src);
-        iframe.removeAttribute('data-src');
-      }
-    }
-    
-    // Load the first video initially
-    var firstItem = carousel.querySelector('.carousel-item.active');
-    loadVideo(firstItem);
+    document.addEventListener('DOMContentLoaded', function () {
+        var carousel = document.getElementById('videoCarousel');
 
-    // Add event listener for carousel slide event
-    $('#videoCarousel').on('slide.bs.carousel', function(event) {
-      var nextItem = event.relatedTarget;
-      loadVideo(nextItem);
+        // Function to load the video
+        function loadVideo(item) {
+            var iframe = item.querySelector('iframe');
+            var src = iframe.getAttribute('data-src');
+            if (src) {
+                iframe.setAttribute('src', src);
+                iframe.removeAttribute('data-src');
+            }
+        }
+
+        // Load the first video initially
+        var firstItem = carousel.querySelector('.carousel-item.active');
+        loadVideo(firstItem);
+
+        // Add event listener for carousel slide event
+        $('#videoCarousel').on('slide.bs.carousel', function (event) {
+            var nextItem = event.relatedTarget;
+            loadVideo(nextItem);
+        });
     });
-  });
 </script>
