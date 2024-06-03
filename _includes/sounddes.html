@@ -19,8 +19,7 @@
         border: 0;
     }
 </style>
-<div id="videoCarousel" class="carousel slidelazy-load" data-ride="carousel" data-interval="false">
-
+<div id="videoCarousel" class="carousel slide lazy-load" data-ride="carousel" data-interval="false">
     <div class="carousel-inner">
         <!-- <div class="carousel-item active">
         <div class="card" style="margin: auto; height: 60vh; width: 70vw; border-radius: 20px; background-color: #000;">
@@ -364,11 +363,28 @@
 </div>
 
 <script>
-    $(function () {
-        $('.carousel.lazy-load').bind('slide.bs.carousel', function (e) {
-            var image = $(e.relatedTarget).find('img[data-src]');
-            image.attr('src', image.data('src'));
-            image.removeAttr('data-src');
-        });
+    document.addEventListener('DOMContentLoaded', function() {
+      var carousel = document.getElementById('videoCarousel');
+      
+      // Function to load the video
+      function loadVideo(item) {
+        var iframe = item.querySelector('iframe');
+        var src = iframe.getAttribute('data-src');
+        if (src) {
+          iframe.setAttribute('src', src);
+          iframe.removeAttribute('data-src');
+        }
+      }
+      
+      // Load the first video initially
+      var firstItem = carousel.querySelector('.carousel-item.active');
+      loadVideo(firstItem);
+  
+      // Add event listener for carousel slide event
+      $('#videoCarousel').on('slide.bs.carousel', function(event) {
+        var nextItem = event.relatedTarget;
+        loadVideo(nextItem);
+      });
     });
-</script>
+  </script>
+  
