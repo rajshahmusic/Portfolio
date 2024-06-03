@@ -87,9 +87,11 @@
 }
 .btn-shadow {
     box-shadow: 0px 1px 0px rgb(123, 0, 255), 0px 2px 0px rgb(78, 122, 255), 0px 0px 15px rgb(255, 255, 255);
+    
 }
 .heading-shadow {
     text-shadow: 3px 3px 0px rgb(123, 0, 255), 5px 5px 0px rgb(78, 122, 255), 0px 12px 10px rgba(0, 0, 0, 0.7), 0px 0px 100px rgb(255, 255, 255);
+    animation: textShadowAngleAnimation 3s infinite alternate;
 }
 
 .navbar-brand {
@@ -97,13 +99,54 @@
     text-size-adjust: auto;
     color: rgb(255, 255, 255);
     text-shadow: 0.5px 0.5px 0px rgb(123, 0, 255), 1px 1px 0px rgb(78, 122, 255);
+    animation: textShadowAnimation 3s infinite alternate;
 }
+
+/* .intro-header {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 0.5px 0.5px 0px rgb(123, 0, 255), 1px 1px 0px rgb(78, 122, 255);
+} */
 
 .intro-header {
     font-family: 'Poppins', sans-serif;
     color: rgb(255, 255, 255);
     text-shadow: 0.5px 0.5px 0px rgb(123, 0, 255), 1px 1px 0px rgb(78, 122, 255);
+    font-size: 3rem;
+    /* animation: textShadowAnimation 3s infinite alternate; */
 }
+
+@keyframes textShadowAngleAnimation {
+    0% {
+      text-shadow: 2px 2px 0px rgb(123, 0, 255), 4px 4px 0px rgb(78, 122, 255);
+    }
+    25% {
+      text-shadow: -2px 2px 0px rgb(123, 0, 255), -4px 4px 0px rgb(78, 122, 255);
+    }
+    50% {
+      text-shadow: -2px -2px 0px rgb(123, 0, 255), -4px -4px 0px rgb(78, 122, 255);
+    }
+    75% {
+      text-shadow: 2px -2px 0px rgb(123, 0, 255), 4px -4px 0px rgb(78, 122, 255);
+    }
+    100% {
+      text-shadow: 2px 2px 0px rgb(123, 0, 255), 4px 4px 0px rgb(78, 122, 255);
+    }
+  }
+
+
+  @keyframes textShadowAnimation {
+    0% {
+      text-shadow: 0.5px 0.5px 0px rgb(123, 0, 255), 1px 1px 0px rgb(78, 122, 255);
+    }
+    50% {
+      text-shadow: 1.5px 1.5px 5px rgb(255, 0, 150), 3px 3px 10px rgb(0, 255, 255);
+    }
+    100% {
+      text-shadow: 0.5px 0.5px 0px rgb(123, 0, 255), 1px 1px 0px rgb(78, 122, 255);
+    }
+  }
+
 
 .nav-link {
     color: white;
@@ -112,6 +155,7 @@
     border: none;
     color: rgba(0, 0, 0, 0);
     border-color: rgba(255, 255, 255, 0.5);
+    
 }
 .navbar-toggler-icon {
     border: none;
@@ -137,4 +181,5 @@
     border-width: 0px;
     position: relative;
     bottom: 0;
+    animation: textShadowAnimation 3s infinite alternate;
 }
