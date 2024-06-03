@@ -19,7 +19,7 @@
         border: 0;
     }
 </style>
-<div id="videoCarousel" class="carousel slide lazy-load" data-ride="carousel" data-interval="false">
+<div id="videoCarousel" class="carousel slide lazy-load" data-bs-ride="carousel" data-bs-interval="false">
     <div class="carousel-inner">
         <!-- <div class="carousel-item active">
         <div class="card" style="margin: auto; height: 60vh; width: 70vw; border-radius: 20px; background-color: #000;">
@@ -352,39 +352,38 @@
         </div>
     </div>
 
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
     </button>
 </div>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var carousel = document.getElementById('videoCarousel');
-      
-      // Function to load the video
-      function loadVideo(item) {
-        var iframe = item.querySelector('iframe');
-        var src = iframe.getAttribute('data-src');
-        if (src) {
-          iframe.setAttribute('src', src);
-          iframe.removeAttribute('data-src');
+    document.addEventListener('DOMContentLoaded', function () {
+        var carousel = document.getElementById('videoCarousel');
+
+        // Function to load the video
+        function loadVideo(item) {
+            var iframe = item.querySelector('iframe');
+            var src = iframe.getAttribute('data-src');
+            if (src) {
+                iframe.setAttribute('src', src);
+                iframe.removeAttribute('data-src');
+            }
         }
-      }
-      
-      // Load the first video initially
-      var firstItem = carousel.querySelector('.carousel-item.active');
-      loadVideo(firstItem);
-  
-      // Add event listener for carousel slide event
-      $('#videoCarousel').on('slide.bs.carousel', function(event) {
-        var nextItem = event.relatedTarget;
-        loadVideo(nextItem);
-      });
+
+        // Load the first video initially
+        var firstItem = carousel.querySelector('.carousel-item.active');
+        loadVideo(firstItem);
+
+        // Add event listener for carousel slide event
+        $('#videoCarousel').on('slide.bs.carousel', function (event) {
+            var nextItem = event.relatedTarget;
+            loadVideo(nextItem);
+        });
     });
-  </script>
-  
+</script>
