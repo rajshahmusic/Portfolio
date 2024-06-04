@@ -1,0 +1,354 @@
+.background {
+    background-image: url("/Portfolio/assets/img/bg1.png");
+    background-position: 0% 40%;
+    background-position-y: 40%;
+    background-color: #000;
+}
+
+.background-landing {
+    background-image: url("/Portfolio/assets/img/bg1.png");
+    /* background-size: cover; */
+    background-attachment: fixed;
+    background-position: 0% 40%;
+    background-position-y: 40%;
+}
+
+.background-services {
+    background-image: url("/Portfolio/assets/img/bgm.png");
+    background-attachment: fixed;
+    background-position: 0% 40%;
+    background-position-y: 40%;
+}
+
+
+.glass {
+    background: linear-gradient(270deg, rgba(122, 122, 122, 0.5), rgba(0, 0, 0, 0.5));
+    background-size: 400% 400%;
+
+    -webkit-animation: background 45s ease infinite;
+    -moz-animation: background 45s ease infinite;
+    animation: background 45s ease infinite;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    /*border: 1px solid rgba(255, 255, 255, 0.2);*/
+}
+
+@-webkit-keyframes background {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes background {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes background {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    10% {
+        transform: rotate(14deg);
+    }
+
+    /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+        transform: rotate(-8deg);
+    }
+
+    30% {
+        transform: rotate(14deg);
+    }
+
+    40% {
+        transform: rotate(-4deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+    60% {
+        transform: rotate(0deg);
+    }
+
+    /* Reset for the last half to pause */
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes textShadowAngleAnimation {
+    /* 0% {
+        text-shadow: 2px 2px 0px rgb(123, 0, 255), 4px 4px 0px rgb(78, 122, 255);
+    } */
+
+    0% {
+        text-shadow: 0px 0px 0px rgb(123, 0, 255), 0px 0px 0px rgb(78, 122, 255);
+    }
+
+    /* 25% {
+        text-shadow: -2px 2px 0px rgb(123, 0, 255), -4px 4px 0px rgb(78, 122, 255);
+    } */
+/* 
+    50% {
+        text-shadow: -2px -2px 0px rgb(123, 0, 255), -4px -4px 0px rgb(78, 122, 255);
+    } */
+
+    /* 50% {
+        text-shadow: 2px 2px 0px rgb(123, 0, 255), 4px 4px 0px rgb(78, 122, 255);
+    } */
+
+    /* 75% {
+        text-shadow: 2px -2px 0px rgb(123, 0, 255), 4px -4px 0px rgb(78, 122, 255);
+    } */
+
+    /* 100% {
+        text-shadow: 2px 2px 0px rgb(123, 0, 255), 4px 4px 0px rgb(78, 122, 255);
+    } */
+    100% {
+        text-shadow: 2px 2px 0px rgb(123, 0, 255), 4px 4px 0px rgb(78, 122, 255);
+    }
+
+
+}
+
+
+@keyframes textShadowAnimation {
+    0% {
+        text-shadow: 0.5px 0.5px 0px rgb(123, 0, 255), 1px 1px 0px rgb(78, 122, 255);
+    }
+
+    50% {
+        text-shadow: 1.5px 1.5px 5px rgb(255, 0, 150), 3px 3px 10px rgb(0, 255, 255);
+    }
+
+    100% {
+        text-shadow: 0.5px 0.5px 0px rgb(123, 0, 255), 1px 1px 0px rgb(78, 122, 255);
+    }
+}
+
+.big-shadow {
+    box-shadow: 0px 12px 50px rgba(0, 0, 0, 0.25);
+}
+
+.photo-shadow {
+    box-shadow: 10px 10px 75px rgba(0, 0, 0, 0.75);
+}
+
+.btn-shadow {
+    box-shadow: 0px 1px 0px rgb(123, 0, 255), 0px 2px 0px rgb(78, 122, 255), 0px 0px 15px rgb(255, 255, 255);
+
+}
+
+.heading-shadow {
+    text-shadow: 3px 3px 0px rgb(123, 0, 255), 5px 5px 0px rgb(78, 122, 255), 0px 12px 10px rgba(0, 0, 0, 0.7), 0px 0px 100px rgb(255, 255, 255);
+    /*animation: textShadowAngleAnimation 0.5s infinite alternate;*/
+}
+
+.navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    text-size-adjust: auto;
+    color: rgb(255, 255, 255);
+    text-shadow: 0.5px 0.5px 0px rgb(123, 0, 255), 1px 1px 0px rgb(78, 122, 255);
+    /* animation: textShadowAnimation 3s infinite alternate; */
+}
+
+/* .intro-header {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 0.5px 0.5px 0px rgb(123, 0, 255), 1px 1px 0px rgb(78, 122, 255);
+} */
+
+.intro-header {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 0.5px 0.5px 0px rgb(123, 0, 255), 1px 1px 0px rgb(78, 122, 255);
+    /* animation: textShadowAnimation 3s infinite alternate; */
+}
+
+.nav-link {
+    color: white;
+}
+
+.navbar-toggler {
+    border: none;
+    color: rgba(0, 0, 0, 0);
+    border-color: rgba(255, 255, 255, 0.5);
+
+}
+
+.navbar-toggler-icon {
+    border: none;
+    color: rgb(255, 255, 255);
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio */
+    border-radius: 20px;
+    /* Optional: to keep the rounded corners */
+    overflow: hidden;
+    /* Optional: to ensure iframe does not overflow the container */
+}
+
+.video-container iframe {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 80%;
+    border: 0;
+    border-radius: 20px;
+}
+
+.quote-text {
+    font-family: 'Alegreya', serif;
+    font-size: 16px;
+    color: white;
+}
+
+.quote-author {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 10px;
+    color: white;
+}
+
+
+.footer {
+    color: rgb(255, 255, 255);
+    text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.25);
+    border: 100px solid #000000;
+    border-width: 0px;
+    position: relative;
+}
+
+#port_sel{
+    background-color: black;
+    color: grey
+}
+
+#port_sel:hover{
+    background-color: white;
+    color: black
+}
+
+#tabcont{
+    font-family: poppins;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+#tabcont_sub{
+    font-family: poppins;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+    /* Style the tab */
+    .tab {
+        /* overflow: hidden; */
+        /* border: 3px solid aqua; */
+        /* background-color: #f1f1f1; */
+        display: flex;
+        /* Add Flexbox */
+        justify-content: center;
+        /* Center buttons horizontally */
+        border-bottom-left-radius: 20px;
+        /* If needed */
+        border-bottom-right-radius: 20px;
+        /* border-color: aqua; */
+        /* border-width: 2px; */
+        /* If needed */
+    }
+
+    /* Style the buttons inside the tab */
+    .tab button {
+        background-color: transparent;
+        border: 2px solid aqua;
+        /* border-right-width: 2px; */
+        /* border-right-width: 2px; */
+        outline: none;
+        cursor: pointer;
+        /* padding: 14px 16px; */
+        transition: 0.3s;
+        font-size: 17px;
+        border-radius: 20px;
+        /* margin: 0 5px; */
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+        background-color: #fff;
+        color: #000;
+    }
+
+    /* Create an active/current tablink class */
+    .tab button.active {
+        background-color: #000;
+    }
+
+
+    /* Style the tab content */
+    .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        /* border: 1px solid #ccc; */
+        border-top: none;
+    }
+    
+    .container-fluid {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    footer {
+        clear: both;
+        width: 100%;
+        position: relative;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.8);
+    }
+    
+    .carousel-control-prev,
+    .carousel-control-next {
+        z-index: 1;
+    }

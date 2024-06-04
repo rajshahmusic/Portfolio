@@ -1,4 +1,4 @@
-import data from './quotes.json' assert { type: 'json' };
+import data from "./data/quotes.json" assert { type: 'json' };
 
 
 function getRandomInt(max) {
