@@ -1,14 +1,13 @@
 .background {
     background-image: url("/Portfolio_Test/assets/img/bg1.png");
-    background-size: cover;
     background-position: 0% 40%;
     background-position-y: 40%;
+    background-color: #000;
 }
 
 .background-landing {
     background-image: url("/Portfolio_Test/assets/img/bg1.png");
     /* background-size: cover; */
-    max-height: 100vh;
     background-attachment: fixed;
     background-position: 0% 40%;
     background-position-y: 40%;
@@ -16,8 +15,6 @@
 
 .background-services {
     background-image: url("/Portfolio_Test/assets/img/bgm.png");
-    background-size: cover;
-    
     background-attachment: fixed;
     background-position: 0% 40%;
     background-position-y: 40%;
@@ -32,6 +29,7 @@
     -moz-animation: background 45s ease infinite;
     animation: background 45s ease infinite;
     backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
     /*border: 1px solid rgba(255, 255, 255, 0.2);*/
 }
 
