@@ -1,116 +1,118 @@
-<div class="container-fluid" style="height: 75vh; width: 98vw;margin-bottom: 100px;">
+<div class="container-fluid background">
+    <div class="" style="height: 75vh; width: 98vw;margin-bottom: 100px;">
 
-    <div id="SoundDes" class="tabcontent active"
-        style="border-top-left-radius: 20px;border-top-right-radius: 20px; border-width: 0px; display: block; background-color: transparent;">
-        <h3 id="tabcont">Sound Design</h3>
-        <h3 id="tabcont_sub">Description about this section!</h3>
-        {% include sounddes.html %}
+        <div id="SoundDes" class="tabcontent active"
+            style="border-top-left-radius: 20px;border-top-right-radius: 20px; border-width: 0px; display: block; background-color: transparent;">
+            <h3 id="tabcont">Sound Design</h3>
+            <h3 id="tabcont_sub">Description about this section!</h3>
+            {% include sounddes.html %}
+        </div>
+    
+        <div id="AdFilms" class="tabcontent"
+            style="border-top-left-radius: 20px;border-top-right-radius: 20px; background-color: transparent;">
+            <h3 id="tabcont">AdFilms</h3>
+            <h3 id="tabcont_sub">Description about this section!</h3>
+            {% include adfilms.html %}
+        </div>
+    
+        <div id="VidGames" class="tabcontent"
+            style="border-top-left-radius: 20px;border-top-right-radius: 20px; background-color: transparent;">
+            <h3 id="tabcont">Video Games</h3>
+            <h3 id="tabcont_sub">Description about this section!</h3>
+            {% include vidgames.html %}
+        </div>
+    
+        <div id="Music" class="tabcontent"
+            style="border-top-left-radius: 20px;border-top-right-radius: 20px; background-color: transparent;">
+            <h3 id="tabcont">Music</h3>
+            <h3 id="tabcont_sub">Description about this section!</h3>
+            {% include music.html %}
+        </div>
+    
+        <div class="nav justify-content-center flex" style="justify-items: center;">
+            <button id="port_sel" class="tablink nav-link rounded-4"
+                style="margin: auto; border: 2px solid #000;width: 24%;" onclick="openCity(event, 'SoundDes')">Sound
+                Design</button>
+            <button id="port_sel" class="tablink nav-link rounded-4"
+                style="margin: auto; border: 2px solid #000;width: 24%;" onclick="openCity(event, 'AdFilms')">Advert
+                Films</button>
+            <button id="port_sel" class="tablink nav-link rounded-4"
+                style="margin: auto; border: 2px solid #000;width: 24%;" onclick="openCity(event, 'VidGames')">Video
+                Games</button>
+            <button id="port_sel" class="tablink nav-link rounded-4"
+                style="margin: auto; border: 2px solid #000;width: 24%;" onclick="openCity(event, 'Music')">Music</button>
+        </div>
     </div>
-
-    <div id="AdFilms" class="tabcontent"
-        style="border-top-left-radius: 20px;border-top-right-radius: 20px; background-color: transparent;">
-        <h3 id="tabcont">AdFilms</h3>
-        <h3 id="tabcont_sub">Description about this section!</h3>
-        {% include adfilms.html %}
+    <br><br>
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablink;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablink = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablink.length; i++) {
+                tablink[i].className = tablink[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+    <!-- <div class="container-fluid">
+    
+        <div class="w3-container">
+            <h2>Tabs in a Grid</h2>
+    
+            <div class="w3-row" style="border-bottom-left-radius: 20px;border-bottom-right-radius: 20px;">
+                <a href="javascript:void(0)" onclick="openCity(event, 'SoundDes');">
+                    <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">SoundDes</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openCity(event, 'AdFilms');">
+                    <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">AdFilms</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openCity(event, 'VidGames');">
+                    <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">VidGames</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openCity(event, 'Music');">
+                    <div class="w3-fourth tablink w3-bottombar w3-hover-light-grey w3-padding">Music</div>
+                </a>
+            </div>
+            <div id="SoundDes" class="w3-container city" style="display:none">
+                <h2>SoundDes</h2>
+                <p>SoundDes is the capital city of England.</p>
+            </div>
+    
+            <div id="AdFilms" class="w3-container city" style="display:none">
+                <h2>AdFilms</h2>
+                <p>AdFilms is the capital city of England.</p>
+            </div>
+    
+            <div id="VidGames" class="w3-container city" style="display:none">
+                <h2>VidGames</h2>
+                <p>VidGames is the capital of France.</p>
+            </div>
+    
+            <div id="Music" class="w3-container city" style="display:none">
+                <h2>Music</h2>
+                <p>Music is the capital of Japan.</p>
+            </div>
+        </div>
     </div>
-
-    <div id="VidGames" class="tabcontent"
-        style="border-top-left-radius: 20px;border-top-right-radius: 20px; background-color: transparent;">
-        <h3 id="tabcont">Video Games</h3>
-        <h3 id="tabcont_sub">Description about this section!</h3>
-        {% include vidgames.html %}
-    </div>
-
-    <div id="Music" class="tabcontent"
-        style="border-top-left-radius: 20px;border-top-right-radius: 20px; background-color: transparent;">
-        <h3 id="tabcont">Music</h3>
-        <h3 id="tabcont_sub">Description about this section!</h3>
-        {% include music.html %}
-    </div>
-
-    <div class="nav justify-content-center flex" style="justify-items: center;">
-        <button id="port_sel" class="tablink nav-link rounded-4"
-            style="margin: auto; border: 2px solid #000;width: 24%;" onclick="openCity(event, 'SoundDes')">Sound
-            Design</button>
-        <button id="port_sel" class="tablink nav-link rounded-4"
-            style="margin: auto; border: 2px solid #000;width: 24%;" onclick="openCity(event, 'AdFilms')">Advert
-            Films</button>
-        <button id="port_sel" class="tablink nav-link rounded-4"
-            style="margin: auto; border: 2px solid #000;width: 24%;" onclick="openCity(event, 'VidGames')">Video
-            Games</button>
-        <button id="port_sel" class="tablink nav-link rounded-4"
-            style="margin: auto; border: 2px solid #000;width: 24%;" onclick="openCity(event, 'Music')">Music</button>
-    </div>
+    
+    <script>
+        function openCity(evt, cityName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-border-red", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " w3-border-red";
+        }
+    </script> -->
 </div>
-<br><br>
-<script>
-    function openCity(evt, cityName) {
-        var i, tabcontent, tablink;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-        }
-        tablink = document.getElementsByClassName("tablink");
-        for (i = 0; i < tablink.length; i++) {
-            tablink[i].className = tablink[i].className.replace(" active", "");
-        }
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " active";
-    }
-</script>
-<!-- <div class="container-fluid">
-
-    <div class="w3-container">
-        <h2>Tabs in a Grid</h2>
-
-        <div class="w3-row" style="border-bottom-left-radius: 20px;border-bottom-right-radius: 20px;">
-            <a href="javascript:void(0)" onclick="openCity(event, 'SoundDes');">
-                <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">SoundDes</div>
-            </a>
-            <a href="javascript:void(0)" onclick="openCity(event, 'AdFilms');">
-                <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">AdFilms</div>
-            </a>
-            <a href="javascript:void(0)" onclick="openCity(event, 'VidGames');">
-                <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">VidGames</div>
-            </a>
-            <a href="javascript:void(0)" onclick="openCity(event, 'Music');">
-                <div class="w3-fourth tablink w3-bottombar w3-hover-light-grey w3-padding">Music</div>
-            </a>
-        </div>
-        <div id="SoundDes" class="w3-container city" style="display:none">
-            <h2>SoundDes</h2>
-            <p>SoundDes is the capital city of England.</p>
-        </div>
-
-        <div id="AdFilms" class="w3-container city" style="display:none">
-            <h2>AdFilms</h2>
-            <p>AdFilms is the capital city of England.</p>
-        </div>
-
-        <div id="VidGames" class="w3-container city" style="display:none">
-            <h2>VidGames</h2>
-            <p>VidGames is the capital of France.</p>
-        </div>
-
-        <div id="Music" class="w3-container city" style="display:none">
-            <h2>Music</h2>
-            <p>Music is the capital of Japan.</p>
-        </div>
-    </div>
-</div>
-
-<script>
-    function openCity(evt, cityName) {
-        var i, x, tablinks;
-        x = document.getElementsByClassName("city");
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablink");
-        for (i = 0; i < x.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" w3-border-red", "");
-        }
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.firstElementChild.className += " w3-border-red";
-    }
-</script> -->
