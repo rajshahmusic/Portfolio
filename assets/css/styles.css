@@ -72,13 +72,6 @@
 
 
 
-
-.glass-bg {
-    background-color: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter:brightness(0.5);
-    
-}
 .big-shadow {
     box-shadow: 0px 12px 50px rgba(0, 0, 0, 0.25);
 }
@@ -91,7 +84,7 @@
 }
 .heading-shadow {
     text-shadow: 3px 3px 0px rgb(123, 0, 255), 5px 5px 0px rgb(78, 122, 255), 0px 12px 10px rgba(0, 0, 0, 0.7), 0px 0px 100px rgb(255, 255, 255);
-    animation: textShadowAngleAnimation 3s infinite alternate;
+    /* animation: textShadowAngleAnimation 3s infinite alternate; */
 }
 
 .navbar-brand {
@@ -99,7 +92,7 @@
     text-size-adjust: auto;
     color: rgb(255, 255, 255);
     text-shadow: 0.5px 0.5px 0px rgb(123, 0, 255), 1px 1px 0px rgb(78, 122, 255);
-    animation: textShadowAnimation 3s infinite alternate;
+    /* animation: textShadowAnimation 3s infinite alternate; */
 }
 
 /* .intro-header {
@@ -112,7 +105,6 @@
     font-family: 'Poppins', sans-serif;
     color: rgb(255, 255, 255);
     text-shadow: 0.5px 0.5px 0px rgb(123, 0, 255), 1px 1px 0px rgb(78, 122, 255);
-    font-size: 3rem;
     /* animation: textShadowAnimation 3s infinite alternate; */
 }
 
@@ -180,6 +172,4 @@
     border: 100px solid #000000;
     border-width: 0px;
     position: relative;
-    bottom: 0;
-    animation: textShadowAnimation 3s infinite alternate;
 }
