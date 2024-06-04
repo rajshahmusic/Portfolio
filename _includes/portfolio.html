@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="container-fluid m-auto mt-5 mb-5">
     <style>
         /* Style the tab */
@@ -153,5 +154,93 @@
             evt.currentTarget.firstElementChild.className += " w3-border-red";
         }
     </script> -->
+=======
+<style>
+    /* Style the tab */
+    .tab {
+        overflow: hidden;
+        /* border: 3px solid aqua; */
+        /* background-color: #f1f1f1; */
+        display: flex;
+        /* Add Flexbox */
+        justify-content: center;
+        /* Center buttons horizontally */
+        border-bottom-left-radius: 20px;
+        /* If needed */
+        border-bottom-right-radius: 20px;
+        /* border-color: aqua; */
+        /* border-width: 2px; */
+        /* If needed */
+    }
+
+    /* Style the buttons inside the tab */
+    .tab button {
+        background-color: transparent;
+        border: 2px solid aqua;
+        /* border-right-width: 2px; */
+        /* border-right-width: 2px; */
+        outline: none;
+        cursor: pointer;
+        /* padding: 14px 16px; */
+        transition: 0.3s;
+        font-size: 17px;
+        border-radius: 20px;
+        /* margin: 0 5px; */
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+        background-color: #fff;
+        color: #000;
+    }
+
+    /* Create an active/current tablink class */
+    .tab button.active {
+        background-color: #000;
+    }
+
+
+    /* Style the tab content */
+    .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        /* border: 1px solid #ccc; */
+        border-top: none;
+    }
+</style>
+
+<div class="container-fluid glass-bg" style="margin: 20px; margin-right: 20px; border-radius: 20px;">
+    <div id="SoundDes" class="tabcontent active"
+        style="border-top-left-radius: 20px;border-top-right-radius: 20px; border-width: 0px; display: block; background-color: transparent;">
+        <h3 class="text-white" style="padding-bottom: 20px;">Sound Design</h3>
+        {% include sounddes.html %}
+    </div>
+
+    <div id="AdFilms" class="tabcontent glass-bg" style="border-top-left-radius: 20px;border-top-right-radius: 20px; background-color: transparent;">
+        <h3 class="text-white">AdFilms</h3>
+        {% include adfilms.html %}
+    </div>
+
+    <div id="VidGames" class="tabcontent glass-bg" style="border-top-left-radius: 20px;border-top-right-radius: 20px; background-color: transparent;">
+        <h3 class="text-white">Video Games</h3>
+        {% include vidgames.html %}
+    </div>
+
+    <div id="Music" class="tabcontent glass" style="border-top-left-radius: 20px;border-top-right-radius: 20px; background-color: transparent;">
+        <h3 class="text-white">Music</h3>
+        {% include music.html %}
+    </div>
+    <div class="tab" style="background-color: transparent;">
+        <button class="btn btn-primary" style="width: 25vw;"
+            onclick="openCity(event, 'SoundDes')">Sound Design</button>
+        <button class="btn btn-primary" style="width: 25vw;"
+            onclick="openCity(event, 'AdFilms')">Advert Films</button>
+        <button class="btn btn-primary" style="width: 25vw;"
+            onclick="openCity(event, 'VidGames')">Video Games</button>
+        <button class="btn btn-primary" style="width: 25vw;"
+            onclick="openCity(event, 'Music')">Music</button>
+    </div>
+
+>>>>>>> befc404 (Misc changes)
 </div>
 
