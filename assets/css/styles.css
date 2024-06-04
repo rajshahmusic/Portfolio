@@ -96,25 +96,38 @@
 }
 
 @keyframes textShadowAngleAnimation {
-    0% {
+    /* 0% {
         text-shadow: 2px 2px 0px rgb(123, 0, 255), 4px 4px 0px rgb(78, 122, 255);
+    } */
+
+    0% {
+        text-shadow: 0px 0px 0px rgb(123, 0, 255), 0px 0px 0px rgb(78, 122, 255);
     }
 
-    25% {
+    /* 25% {
         text-shadow: -2px 2px 0px rgb(123, 0, 255), -4px 4px 0px rgb(78, 122, 255);
-    }
-
+    } */
+/* 
     50% {
         text-shadow: -2px -2px 0px rgb(123, 0, 255), -4px -4px 0px rgb(78, 122, 255);
-    }
+    } */
 
-    75% {
+    /* 50% {
+        text-shadow: 2px 2px 0px rgb(123, 0, 255), 4px 4px 0px rgb(78, 122, 255);
+    } */
+
+    /* 75% {
         text-shadow: 2px -2px 0px rgb(123, 0, 255), 4px -4px 0px rgb(78, 122, 255);
-    }
+    } */
 
+    /* 100% {
+        text-shadow: 2px 2px 0px rgb(123, 0, 255), 4px 4px 0px rgb(78, 122, 255);
+    } */
     100% {
         text-shadow: 2px 2px 0px rgb(123, 0, 255), 4px 4px 0px rgb(78, 122, 255);
     }
+
+
 }
 
 
@@ -147,7 +160,7 @@
 
 .heading-shadow {
     text-shadow: 3px 3px 0px rgb(123, 0, 255), 5px 5px 0px rgb(78, 122, 255), 0px 12px 10px rgba(0, 0, 0, 0.7), 0px 0px 100px rgb(255, 255, 255);
-    /* animation: textShadowAngleAnimation 3s infinite alternate; */
+    animation: textShadowAngleAnimation 0.5s infinite alternate;
 }
 
 .navbar-brand {
@@ -228,3 +241,98 @@
     border-width: 0px;
     position: relative;
 }
+
+#port_sel{
+    background-color: black;
+    color: grey
+}
+
+#port_sel:hover{
+    background-color: white;
+    color: black
+}
+
+#tabcont{
+    font-family: poppins;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+#tabcont_sub{
+    font-family: poppins;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+    /* Style the tab */
+    .tab {
+        /* overflow: hidden; */
+        /* border: 3px solid aqua; */
+        /* background-color: #f1f1f1; */
+        display: flex;
+        /* Add Flexbox */
+        justify-content: center;
+        /* Center buttons horizontally */
+        border-bottom-left-radius: 20px;
+        /* If needed */
+        border-bottom-right-radius: 20px;
+        /* border-color: aqua; */
+        /* border-width: 2px; */
+        /* If needed */
+    }
+
+    /* Style the buttons inside the tab */
+    .tab button {
+        background-color: transparent;
+        border: 2px solid aqua;
+        /* border-right-width: 2px; */
+        /* border-right-width: 2px; */
+        outline: none;
+        cursor: pointer;
+        /* padding: 14px 16px; */
+        transition: 0.3s;
+        font-size: 17px;
+        border-radius: 20px;
+        /* margin: 0 5px; */
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+        background-color: #fff;
+        color: #000;
+    }
+
+    /* Create an active/current tablink class */
+    .tab button.active {
+        background-color: #000;
+    }
+
+
+    /* Style the tab content */
+    .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        /* border: 1px solid #ccc; */
+        border-top: none;
+    }
+    
+    .container-fluid {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    footer {
+        clear: both;
+        width: 100%;
+        position: relative;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.8);
+    }
+    
+    .carousel-control-prev,
+    .carousel-control-next {
+        z-index: 1;
+    }

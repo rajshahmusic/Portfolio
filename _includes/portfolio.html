@@ -1,91 +1,48 @@
-<style>
-    /* Style the tab */
-    .tab {
-        overflow: hidden;
-        /* border: 3px solid aqua; */
-        /* background-color: #f1f1f1; */
-        display: flex;
-        /* Add Flexbox */
-        justify-content: center;
-        /* Center buttons horizontally */
-        border-bottom-left-radius: 20px;
-        /* If needed */
-        border-bottom-right-radius: 20px;
-        /* border-color: aqua; */
-        /* border-width: 2px; */
-        /* If needed */
-    }
+<div class="container rounded-4" style="height: 80vh;width: 98%;margin-bottom: 10vh;">
 
-    /* Style the buttons inside the tab */
-    .tab button {
-        background-color: transparent;
-        border: 2px solid aqua;
-        /* border-right-width: 2px; */
-        /* border-right-width: 2px; */
-        outline: none;
-        cursor: pointer;
-        /* padding: 14px 16px; */
-        transition: 0.3s;
-        font-size: 17px;
-        border-radius: 20px;
-        /* margin: 0 5px; */
-    }
-
-    /* Change background color of buttons on hover */
-    .tab button:hover {
-        background-color: #fff;
-        color: #000;
-    }
-
-    /* Create an active/current tablink class */
-    .tab button.active {
-        background-color: #000;
-    }
-
-
-    /* Style the tab content */
-    .tabcontent {
-        display: none;
-        padding: 6px 12px;
-        /* border: 1px solid #ccc; */
-        border-top: none;
-    }
-</style>
-
-<div class="container-fluid glass-bg" style="margin: 20px; margin-right: 20px; border-radius: 20px;">
     <div id="SoundDes" class="tabcontent active"
         style="border-top-left-radius: 20px;border-top-right-radius: 20px; border-width: 0px; display: block; background-color: transparent;">
-        <h3 class="text-white" style="padding-bottom: 20px;">Sound Design</h3>
+        <h3 id="tabcont">Sound Design</h3>
+        <h3 id="tabcont_sub">Description about this section!</h3>
         {% include sounddes.html %}
     </div>
 
-    <div id="AdFilms" class="tabcontent glass-bg" style="border-top-left-radius: 20px;border-top-right-radius: 20px; background-color: transparent;">
-        <h3 class="text-white">AdFilms</h3>
+    <div id="AdFilms" class="tabcontent"
+        style="border-top-left-radius: 20px;border-top-right-radius: 20px; background-color: transparent;">
+        <h3 id="tabcont">AdFilms</h3>
+        <h3 id="tabcont_sub">Description about this section!</h3>
         {% include adfilms.html %}
     </div>
 
-    <div id="VidGames" class="tabcontent glass-bg" style="border-top-left-radius: 20px;border-top-right-radius: 20px; background-color: transparent;">
-        <h3 class="text-white">Video Games</h3>
+    <div id="VidGames" class="tabcontent"
+        style="border-top-left-radius: 20px;border-top-right-radius: 20px; background-color: transparent;">
+        <h3 id="tabcont">Video Games</h3>
+        <h3 id="tabcont_sub">Description about this section!</h3>
         {% include vidgames.html %}
     </div>
 
-    <div id="Music" class="tabcontent glass" style="border-top-left-radius: 20px;border-top-right-radius: 20px; background-color: transparent;">
-        <h3 class="text-white">Music</h3>
+    <div id="Music" class="tabcontent"
+        style="border-top-left-radius: 20px;border-top-right-radius: 20px; background-color: transparent;">
+        <h3 id="tabcont">Music</h3>
+        <h3 id="tabcont_sub">Description about this section!</h3>
         {% include music.html %}
     </div>
-    <div class="tab" style="background-color: transparent;">
-        <button class="btn btn-primary" style="width: 25vw;"
-            onclick="openCity(event, 'SoundDes')">Sound Design</button>
-        <button class="btn btn-primary" style="width: 25vw;"
-            onclick="openCity(event, 'AdFilms')">Advert Films</button>
-        <button class="btn btn-primary" style="width: 25vw;"
-            onclick="openCity(event, 'VidGames')">Video Games</button>
-        <button class="btn btn-primary" style="width: 25vw;"
-            onclick="openCity(event, 'Music')">Music</button>
+
+    <div class="nav justify-content-center flex" style="justify-items: center;">
+        <button id="port_sel" class="tablink nav-link rounded-4"
+            style="margin: auto; border: 2px solid #000;width: 24%;" onclick="openCity(event, 'SoundDes')">Sound
+            Design</button>
+        <button id="port_sel" class="tablink nav-link rounded-4"
+            style="margin: auto; border: 2px solid #000;width: 24%;" onclick="openCity(event, 'AdFilms')">Advert
+            Films</button>
+        <button id="port_sel" class="tablink nav-link rounded-4"
+            style="margin: auto; border: 2px solid #000;width: 24%;" onclick="openCity(event, 'VidGames')">Video
+            Games</button>
+        <button id="port_sel" class="tablink nav-link rounded-4"
+            style="margin: auto; border: 2px solid #000;width: 24%;" onclick="openCity(event, 'Music')">Music</button>
     </div>
-
 </div>
-
+<br><br>
 <script>
     function openCity(evt, cityName) {
         var i, tabcontent, tablink;
