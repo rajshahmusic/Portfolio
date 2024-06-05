@@ -270,6 +270,13 @@
     color: white;
 }
 
+.iframe-video {
+    width: 755px;
+    height: 424px;
+    max-width: 100%;
+    max-height: calc((100vw - 40px) / (16/9));
+}
+
 
 .footer {
     color: rgb(255, 255, 255);
