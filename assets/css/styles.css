@@ -278,8 +278,8 @@
 }
 
 .iframe-video {
-    width: 755px;
-    height: 424px;
+    height: 400px;
+    min-height: auto;
     max-width: 100%;
     max-height: calc((100vw - 40px) / (16/9));
 }
@@ -369,10 +369,10 @@
     border-top: none;
 }
 
-.container-fluid {
+/* .container-fluid {
     position: relative;
     overflow: hidden;
-}
+}*/
 
 footer {
     clear: both;
