@@ -1,7 +1,15 @@
-import data from './data/text.json' assert { type: 'json' };
+var words = ["Sound Design?", "Music Production?", "Mixing?", "Mastering?", "Film Mix?"];
 
-var intro_title = data.intro.title;
-var intro_text = data.intro.text;
+// Function to change text every 5 seconds
+function changeText() {
+    var randomIndex = Math.floor(Math.random() * words.length);
+    var newText = words[randomIndex];
+    document.getElementById("skills").textContent = newText;
+}
 
-document.getElementById('intro_title').innerHTML = intro_title;
-document.getElementById('intro_text').innerHTML = intro_text;
+// Call changeText every 5 seconds
+setInterval(changeText, 3000);
+
+
+
+
